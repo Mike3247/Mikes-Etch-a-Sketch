@@ -1,9 +1,10 @@
 .container{
     display: grid;
-    font-size: 50px;
+    font-size: 12.5px;
     width: 100%;
     background: LightGray;
-    grid-template-columns: 50px 50px 50px 50px 50px;
+    grid-template-columns: 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px ;
+    grid-template-rows: 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px 37.5px  ;
 }
 
 

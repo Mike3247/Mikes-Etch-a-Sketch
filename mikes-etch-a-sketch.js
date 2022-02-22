@@ -14,14 +14,29 @@ menu.appendChild(createMenuItem('About Us'));
 function createDiv(namenumber1) {
     let div = document.createElement('div');
     div.textcontent = namenumber1;
-    div.style.width = "100px";
-    div.style.height = "100px";
+    div.style.width = "37.5px";
+    div.style.height = "37.5px";
     div.style.background = "red";
     div.style.color = "white";
+    div.style.border = "groove";
     div.appendChild( document.createTextNode("Hello"));
     return div;
 }
 
 const container = document.querySelector('#container');
-container.appendChild(createDiv("div1"));
-container.appendChild(createDiv("div2"));
+for (var i = 0; i < 256; i++) { 
+    container.appendChild(createDiv("div"));
+}
+
+// need to find out how to add "id" attribute to JS-built divs //
+/*
+const element = document.querySelector("#box");
+
+element.addEventListener("mouseover", event => {
+  console.log("Mouse in");
+});
+
+element.addEventListener("mouseout", event => {
+  console.log("Mouse out");
+});
+*/
