@@ -44,7 +44,19 @@ document.querySelector("div").addEventListener(
   console.log("mouseout");
 })
 
-document.getElementsByClassName("256").addEventListener(
+/*
+document.querySelectorAll(".256").forEach(item => { 
+  item.addEventListener("mouseover", function () {
+    document.querySelectorAll(".256").forEach(item => { 
+      item.style.background = "blue";})
+    })
+*/
+
+const the256divs = Array.from(document.getElementsByClassName("256"));
+
+the256divs.forEach(addEventListener:)
+
+.addEventListener(
   "mouseover", function () {
         
   document.getElementsByClassName("256").style.background = "blue";
