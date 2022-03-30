@@ -52,16 +52,20 @@ document.querySelectorAll(".256").forEach(item => {
     })
 */
 
-const the256divs = Array.from(document.getElementsByClassName("256"));
+const the256divs = document.getElementsByClassName("256");
 
-the256divs.forEach(addEventListener:)
+const the256divsArray = Array.from(the256divs);
 
-.addEventListener(
-  "mouseover", function () {
+console.log(the256divsArray);
+
+the256divsArray.map()
+
+// addEventListener(
+//   "mouseover", function () {
         
-  document.getElementsByClassName("256").style.background = "blue";
-  console.log("mouseover");
-})
+//   document.getElementsByClassName("256").style.background = "blue";
+//   console.log("mouseover");
+// })
 
 
 // math randomization code for random color selection: color[Math.floor(Math.random() * color.length)]  //
