@@ -60,18 +60,51 @@ console.log(the256divsArray);
 
 the256divsArray.forEach((item) => {
 item.addEventListener("mouseover", () => {
-  item.style.background = "green";
+  if (item.style.background = "red") item.style.background = "green";
+    else (the256divsArray.forEach((item) => {
+      item.addEventListener("mouseover", () => {
+        item.style.background = "red";
+      })
+    })
+    ); 
+  }) 
+});
+
+const tryagain = document.querySelector(".tryagain");
+const btn = document.querySelector("button");
+
+  btn.addEventListener("click", function () {
+    if (tryagain.style.color != "red") tryagain.style.color = "red";
+      else if (tryagain.style.color = "red") tryagain.style.color = "blue";
+  });
+
+  btn.addEventListener("click", function () {
+    createDiv("div");
+  })
+
+/// trying to find a way to "clear" the grid back to start form
+/// i.e. all red with white TextNode of "hello".
+/// trying to figure out how to eventlisten to mouseover
+        ///// more than once (2022/04/01)
     //console.log("mouseover")
-  })  ///// trying to figure out how to select call EventListener
-});   ////// against the 256 divs as event targets
+  ///// trying to figure out how to select call EventListener
+   ////// against the 256 divs as event targets (MS - 2022/03/31)
+                                /// achieved (MS - 2022/04/01)
 
-the256divsArray.forEach((item) => {
-  item.addEventListener("mouseout", () => {
-    item.style.background = "red";
-      //console.log("mouseout")
-    })  
-  });  
+// the256divsArray.forEach((item) => {
+//   item.addEventListener("mouseout", () => {
+//     item.style.background = "red";
+//       //console.log("mouseout")
+//     })  
+//   });  
 
+
+
+// the256divsArray.forEach((item) => {
+//   item.addEventListener("mouseover", () => {
+//     item.style.background = "red";
+//   })
+// });
 
 // the256divsArray.forEach(alert);
 // the256divsArray.forEach((item, index, array) => {
