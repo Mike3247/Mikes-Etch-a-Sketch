@@ -79,8 +79,11 @@ const btn = document.querySelector("button");
   });
 
   btn.addEventListener("click", function () {
-    createDiv("div");
-  })
+    document.querySelector("div").style.backgroundColor = "red";
+    the256divsArray.forEach((item) => {
+      item.style.backgroundColor = "red";
+    });
+  });
 
 /// trying to find a way to "clear" the grid back to start form
 /// i.e. all red with white TextNode of "hello".
