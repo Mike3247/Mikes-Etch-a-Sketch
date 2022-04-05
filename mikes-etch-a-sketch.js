@@ -12,44 +12,44 @@ menu.appendChild(createMenuItem('Services'));
 menu.appendChild(createMenuItem('About Us'));
 */
 function createDiv(namenumber1) {
-    let div = document.createElement("div");
-    div.textcontent = namenumber1;
-    div.style.width = "37.5px";
-    div.style.height = "37.5px";
-    div.style.background = "red";
-    div.style.color = "white";
-    div.style.border = "groove";
-    div.classList = "256"; 
-    div.appendChild( document.createTextNode("Hello"));
-    return div;
+  let div = document.createElement("div");
+  div.textcontent = namenumber1;
+  div.style.width = "18.75px";
+  div.style.height = "18.75px";
+  div.style.background = "red";
+  div.style.color = "white";
+  div.style.border = "groove";
+  div.classList = "256"; 
+  //div.appendChild( document.createTextNode("Hello"));
+  return div;
 };
 
 const container = document.querySelector('#container');
-for (var i = 0; i < 256; i++) { 
-    container.appendChild(createDiv("div"));
+for (var i = 0; i < 4096; i++) { 
+  container.appendChild(createDiv("div"));
 };
 
 
 document.querySelector("div").addEventListener(
-  "mouseover", () => {
-        
-  document.querySelector("div").style.background = "blue";
-  //console.log("mouseover");
+"mouseover", () => {
+      
+document.querySelector("div").style.background = "blue";
+//console.log("mouseover");
 });
 
 document.querySelector("div").addEventListener(
-  "mouseout", function () {
-        
-  document.querySelector("div").style.background = "green";
-  //console.log("mouseout");
+"mouseout", function () {
+      
+document.querySelector("div").style.background = "green";
+//console.log("mouseout");
 });
 
 /*
 document.querySelectorAll(".256").forEach(item => { 
-  item.addEventListener("mouseover", function () {
-    document.querySelectorAll(".256").forEach(item => { 
-      item.style.background = "blue";})
-    })
+item.addEventListener("mouseover", function () {
+  document.querySelectorAll(".256").forEach(item => { 
+    item.style.background = "blue";})
+  })
 */
 
 const the256divs = document.getElementsByClassName("256");
@@ -60,39 +60,55 @@ console.log(the256divsArray);
 
 the256divsArray.forEach((item) => {
 item.addEventListener("mouseover", () => {
-  if (item.style.background = "red") item.style.background = "green";
-    else (the256divsArray.forEach((item) => {
-      item.addEventListener("mouseover", () => {
-        item.style.background = "red";
-      })
+if (item.style.background = "red") item.style.background = "green";
+  else (the256divsArray.forEach((item) => {
+    item.addEventListener("mouseover", () => {
+      item.style.background = "red";
     })
-    ); 
-  }) 
+  })
+  ); 
+}) 
 });
 
 const tryagain = document.querySelector(".tryagain");
 const btn = document.querySelector("button");
 
-  btn.addEventListener("click", function () {
-    if (tryagain.style.color != "red") tryagain.style.color = "red";
-      else if (tryagain.style.color = "red") tryagain.style.color = "blue";
+btn.addEventListener("click", function () {
+  if (tryagain.style.color != "red") tryagain.style.color = "red";
+    else if (tryagain.style.color = "red") tryagain.style.color = "blue";
+});
+btn.addEventListener("click", function () {
+  document.querySelector("div").style.backgroundColor = "red";
+  the256divsArray.forEach((item) => {
+    item.style.backgroundColor = "red";
   });
+});
+//   btn.addEventListener("click", function () {
+//     document.querySelector('#container');
+//     the256divsArray.forEach((item) => {
+//       const secondcontainer = document.querySelector('#container');
+// for (var i = 0; i < 100; i++) { 
+//     secondcontainer.appendChild(createDiv("div"));
+// };
+//       item.style.width = "37.5px";
+//       item.style.height = "37.5px";
 
-  btn.addEventListener("click", function () {
-    document.querySelector("div").style.backgroundColor = "red";
-    the256divsArray.forEach((item) => {
-      item.style.backgroundColor = "red";
-    });
-  });
+//     });
+//   });
+////////// trying to re-populate grid with different number of squares
+////////// and with new size of squares
+////////// so far this code simply added tons of new squares
+////////// lengthening the page vertically to a ridiculous
+////////// length. (MS 2022/04/02)
 
 /// trying to find a way to "clear" the grid back to start form
 /// i.e. all red with white TextNode of "hello".
 /// trying to figure out how to eventlisten to mouseover
-        ///// more than once (2022/04/01)
-    //console.log("mouseover")
-  ///// trying to figure out how to select call EventListener
-   ////// against the 256 divs as event targets (MS - 2022/03/31)
-                                /// achieved (MS - 2022/04/01)
+      ///// more than once (2022/04/01)
+  //console.log("mouseover")
+///// trying to figure out how to select call EventListener
+ ////// against the 256 divs as event targets (MS - 2022/03/31)
+                              /// achieved (MS - 2022/04/01)
 
 // the256divsArray.forEach((item) => {
 //   item.addEventListener("mouseout", () => {
@@ -115,7 +131,7 @@ const btn = document.querySelector("button");
 // });
 
 // the256divsArray.map() // trying to figure out how 
-                      //to call the array.map 
+                    //to call the array.map 
 //function to iterate through each item of the 
 //array and return ?an event listener?
 // mayber forEach is a more adequate
@@ -124,7 +140,7 @@ const btn = document.querySelector("button");
 
 // addEventListener(
 //   "mouseover", function () {
-        
+      
 //   document.getElementsByClassName("256").style.background = "blue";
 //   console.log("mouseover");
 // })
@@ -143,11 +159,11 @@ dynamicdivs[1].style.background = "blue";
 */
 /*
 dynamicdivs.slice(1, 5).addEventListener("mouseover", event => {
-  console.log("Mouse in");
+console.log("Mouse in");
 
 });
 
 dynamicdivs.slice(1, 5).addEventListener("mouseout", event => {
-  console.log("Mouse out");
+console.log("Mouse out");
 });
 */
