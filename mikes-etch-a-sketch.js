@@ -77,11 +77,16 @@ btn.addEventListener("click", function () {
   if (tryagain.style.color != "red") tryagain.style.color = "red";
     else if (tryagain.style.color = "red") tryagain.style.color = "blue";
 });
-btn.addEventListener("click", function () {
-  document.querySelector("div").style.backgroundColor = "red";
-  the256divsArray.forEach((item) => {
-    item.style.backgroundColor = "red";
-  });
+// btn.addEventListener("click", function () {
+//   document.querySelector("div").style.backgroundColor = "red";
+//   the256divsArray.forEach((item) => {
+//     item.style.backgroundColor = "red";
+//   });
+// });
+btn.addEventListener("click", function() {
+  while (container.hasChildNodes()) {
+    container.removeChild(container.firstChild);
+};
 });
 //   btn.addEventListener("click", function () {
 //     document.querySelector('#container');
