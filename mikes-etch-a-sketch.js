@@ -88,6 +88,10 @@ btn.addEventListener("click", function() {
     container.removeChild(container.firstChild);
 };
 });
+
+btn.addEventListener("click", function () {
+  prompt("You are invited to choose the number of squares per side of the grid for this next round", "x >= 64")
+})
 //   btn.addEventListener("click", function () {
 //     document.querySelector('#container');
 //     the256divsArray.forEach((item) => {

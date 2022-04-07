@@ -1,8 +1,8 @@
 .container{
     display: grid;
     font-size: 12.5px;
-    width: 1024px;
-    height: 1024px;
+    width: 1200px;
+    height: 1200px;
     background: LightGray;
     grid-template-columns: 18.75px 18.75px 18.75px 18.75px 
     18.75px 18.75px 18.75px 18.75px
