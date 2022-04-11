@@ -90,10 +90,17 @@ btn.addEventListener("click", function() {
 });
 
 btn.addEventListener("click", function () {
-  prompt("You are invited to choose the number of squares per side of the grid for this next round", "x >= 64")
-})
+  let numberOfSquares =  prompt("You are invited to choose the number of squares per side of the grid for this next round", "x >= 64");
+  // if (numberOfSquares <= 64) numberofSquares ** 2;  
+  const container = document.querySelector('#container');
+    for (var j = 0; j < (numberOfSquares**2); j++) { 
+    container.appendChild(createDiv("div"));
+  };
+  // plug this value to call a function that will appendChild *
+  // the number of divs requested by the user
+});
 //   btn.addEventListener("click", function () {
-//     document.querySelector('#container');
+//     document.querySelector('#container');You are invited to choose the number of squares per side of the grid for this next round", "x >= 64")
 //     the256divsArray.forEach((item) => {
 //       const secondcontainer = document.querySelector('#container');
 // for (var i = 0; i < 100; i++) { 

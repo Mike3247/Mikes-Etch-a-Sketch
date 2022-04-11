@@ -4,38 +4,8 @@
     width: 1200px;
     height: 1200px;
     background: LightGray;
-    grid-template-columns: 18.75px 18.75px 18.75px 18.75px 
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px 
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px 
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px 
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px ;
-    grid-template-rows: 18.75px 18.75px 18.75px 18.75px 
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px 
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px 
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px 
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px
-    18.75px 18.75px 18.75px 18.75px ;
+    grid-template-columns: repeat(64, 18.75px) ;
+    grid-template-rows: repeat(64, 18.75px) ;
 }
 
 
