@@ -3,9 +3,13 @@
     font-size: 12.5px;
     width: 1200px;
     height: 1200px;
+ /* min-width: 64fr;
+    max-width: 16fr;
+    min-height: 64fr;
+    max-height: 16fr; */
     background: LightGray;
-    grid-template-columns: repeat(64, 18.75px) ;
-    grid-template-rows: repeat(64, 18.75px) ;
+    grid-template-columns: repeat(64, minmax(18.75px, 100px));
+    grid-template-rows: repeat(64, minmax(18.75px, 100px));
 }
 
 
