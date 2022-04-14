@@ -91,7 +91,7 @@ btn.addEventListener("click", function() {
 
 btn.addEventListener("click", function () {
   let numberOfSquares =  prompt("You are invited to choose the number of squares per side of the grid for this next round", "x >= 64");
-  // if (numberOfSquares <= 64) numberofSquares ** 2;  // plug this value to call a function that will appendChild(creatDiv("div")) * the number of divs requested by the user
+  if (numberOfSquares >= 100) return;  // plug this value to call a function that will appendChild(creatDiv("div")) * the number of divs requested by the user
   const container = document.querySelector('#container');
     for (var j = 0; j < (numberOfSquares**2); j++) { 
     container.appendChild(createDiv("div"));
