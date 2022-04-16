@@ -14,8 +14,8 @@ menu.appendChild(createMenuItem('About Us'));
 function createDiv(namenumber1) {
   let div = document.createElement("div");
   div.textcontent = namenumber1;
-  // div.style.width = "18.75px";
-  // div.style.height = "18.75px";
+  div.style.width = "9.6px";
+  div.style.height = "9.6px";
   div.style.background = "red";
   div.style.color = "red";
   //div.style.border = "groove";
@@ -25,7 +25,7 @@ function createDiv(namenumber1) {
 };
 
 const container = document.querySelector('#container');
-for (var i = 0; i < 4096; i++) { 
+for (var i = 0; i < 10000; i++) { 
   container.appendChild(createDiv("div"));
 };
 
@@ -91,10 +91,22 @@ btn.addEventListener("click", function() {
 
 btn.addEventListener("click", function () {
   let numberOfSquares =  prompt("You are invited to choose the number of squares per side of the grid for this next round", "x >= 64");
-  if (numberOfSquares >= 100) return;  // plug this value to call a function that will appendChild(creatDiv("div")) * the number of divs requested by the user
-  const container = document.querySelector('#container');
+  if (numberOfSquares > 100 || numberOfSquares < 1) return;  // plug this value to call a function that will appendChild(creatDiv("div")) * the number of divs requested by the user
+    const container = document.querySelector('#container');
     for (var j = 0; j < (numberOfSquares**2); j++) { 
-    container.appendChild(createDiv("div"));
+      function reCreateDiv(namenumber1) {
+        let div = document.createElement("div");
+        div.textcontent = namenumber1;
+        div.style.width = "9.6px";
+        div.style.height = "9.6px";
+        div.style.background = "red";
+        div.style.color = "red";
+        //div.style.border = "groove";
+        div.classList = "256"; 
+        //div.appendChild( document.createTextNode("Hello"));
+        return div;
+      };
+      container.appendChild(reCreateDiv("div"));
   };
   const the256divs = document.getElementsByClassName("256");
 
